@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="2026 running race calendar for Columbia, Montour, Northumberland, Snyder, Union, and nearby counties" />
+  <title>Susquehanna Valley Running Calendar - 2026 Races</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/png" href="../images/favicon.svg">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+  if (!window.location.hash) {
+    const months = ["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"];
+    const currentMonth = new Date().getMonth(); // 0–11
+    window.location.hash = months[currentMonth];
+  }
+</script>
+</head>
+<body>
+<header>
+  <h1>Susquehanna Valley Running Calendar</h1>
+
+  <!-- Year navigation -->
+  <nav class="year-nav">
+    <a href="2025/index.html">2025</a>
+    <a class="current" href="#">2026</a>
+    <a href="community.html">Community</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <hr>
+
+  <!-- Month navigation inside header -->
+  <nav class="month-nav">
+    <a href="#jan">JAN</a>
+    <a href="#feb">FEB</a>
+    <a href="#mar">MAR</a>
+    <a href="#apr">APR</a>
+    <a href="#may">MAY</a>
+    <a href="#jun">JUN</a>
+    <a href="#jul">JUL</a>
+    <a href="#aug">AUG</a>
+    <a href="#sep">SEP</a>
+    <a href="#oct">OCT</a>
+    <a href="#nov">NOV</a>
+    <a href="#dec">DEC</a>
+  </nav>
+</header>
+
+<main>
+  <h3 id="jan" class="h3-centered">January 2026</h3>
+  <div id="jan-content"></div>
+  
+  <h3 id="feb" class="h3-centered">February 2026</h3>
+  <div id="feb-content"></div>
+
+  <h3 id="mar" class="h3-centered">March 2026</h3>
+  <div id="mar-content"></div>
+  
+  <h3 id="apr" class="h3-centered">April 2026</h3>
+  <div id="apr-content"></div>
+  
+  <h3 id="may" class="h3-centered">May 2026</h3>
+  <div id="may-content"></div>
+  
+  <h3 id="jun" class="h3-centered">June 2026</h3>
+  <div id="jun-content"></div>
+  
+  <h3 id="jul" class="h3-centered">July 2026</h3>
+  <div id="jul-content"></div>
+  
+  <h3 id="aug" class="h3-centered">August 2026</h3>
+  <div id="aug-content"></div>
+
+  <h3 id="sep" class="h3-centered">September 2026</h3>
+  <div id="sep-content"></div>
+  
+  <h3 id="oct" class="h3-centered">October 2026</h3>
+  <div id="oct-content"></div>
+  
+  <h3 id="nov" class="h3-centered">November 2026</h3>
+  <div id="nov-content"></div>
+  
+  <h3 id="dec" class="h3-centered">December 2026</h3>
+  <div id="dec-content"></div>
+</main>
+
+<script src="scripts.js"></script>
+</body>
+</html>

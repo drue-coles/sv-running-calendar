@@ -1,0 +1,238 @@
+{ /* Reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, /* macOS/iOS native */
+                BlinkMacSystemFont, /* Chrome/Safari */
+                "Segoe UI", /* Windows */
+                Roboto, /* Android/Chromebook */
+                Oxygen, Ubuntu, Cantarell, /* Linux */
+                Helvetica, Arial, /* generic fallbacks */
+                sans-serif;
+  line-height: 1.5;
+  background-color: #eeeeee;
+  margin: 0 5px;
+  min-height: 100vh;
+}
+
+a {
+  color: #0b3d91; /* deep blue, stands out against #cdd6de */
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0 0.10em;  
+  display: inline-block;   /* ensures padding applies correctly */
+  letter-spacing: 0.04em;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+  color: #102f6a;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 0.25rem;
+}
+
+.year-nav {
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.year-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.25rem 0.75rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.year-nav a:hover {
+  background: RoyalBlue;
+}
+
+a.current {
+  color: #80ccff;
+  font-weight: bold;
+}
+
+/* Month navigation inside header */
+.month-nav {
+  margin-top: 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.1rem;
+}
+
+.month-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.month-nav a:hover {
+  background: RoyalBlue;
+}
+
+main {
+  margin: 5px;
+  padding-bottom: 2rem; /* Ensures content doesn’t hide under footer */
+}
+
+/* Section headers (months) */
+.h3-centered {
+  margin: 1rem 0 1rem;
+  color: #000;
+  text-align: center;
+}
+
+/* Remove top margin for first month to prevent big space */
+h3:first-of-type {
+  margin-top: 0;
+}
+
+hr {
+  margin: 0.5rem 10px 0.5rem 10px;
+}
+
+/* Empty month containers: remove extra spacing */
+#jan-content,
+#feb-content,
+#mar-content,
+#apr-content,
+#may-content,
+#jun-content,
+#jul-content,
+#aug-content,
+#sep-content,
+#oct-content,
+#nov-content,
+#dec-content {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  background: #d9dee5;
+  color: #1a1a1a;
+  border: 2px solid #888;
+  border-radius: 6px;
+  padding: 0.5rem 0.5rem; /* added vertical padding */
+  margin-bottom: 0.75rem; /* slightly bigger spacing */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.card p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-header {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: #d9dee5;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.card-header:hover {
+  background-color: #999;
+}
+
+.card-body.hidden {
+  display: none;
+}
+
+.icon {
+  width: 0.75rem;           
+  height: 0.75rem;
+  vertical-align: middle;  
+  margin-right: 0.35rem;   
+}
+
+.race-links {
+  margin: 0.5rem 0;
+}
+
+.toggle-icon {
+  margin-right: 0.5rem;
+  font-weight: bold;
+  width: 1rem;
+  text-align: center;
+}
+
+.indent {
+  margin-left: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.instructions {
+  position: absolute;
+  left: 0.5rem;
+  color: gold;
+  font-size: 1rem;
+  padding: 0.25rem 0.75rem;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.tba {
+  margin-left: 0.5rem;
+}
+
+.card-body ul {
+  margin-top: 0.25rem; 
+}
+
+.card-body h2 {
+  margin: 0rem;
+}
+
+.thin-spacer {
+  height: 0.25rem;   
+  line-height: 0;    /* ensure no extra height from content */
+  font-size: 0;      /* prevent inherited font size from affecting height */
+}
+
+.coverage-map {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 0 1rem -20px;  
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.map-figure {
+  text-align: center;
+}
+
+.map-figure figcaption {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 0.5em;
+}
+
